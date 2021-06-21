@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image:url("background.jpg");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    
+  }
+
+  .bounceball {
+    background-image:url("ball.png") ;
+    position: relative;
+    top: 18em;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 98%;
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+    animation-iteration-count: infinite;
+    box-shadow: 10px 250px 7px rgba(68, 68, 68, 0.4);
+    
+  }
+
+/* wreitten  by Anurag */
+  
+  .ballimg{
+    background-image:url("ball.png") ;
+    height: 10em;
+    width: 10em;
+
+
+  }
+  
+  @keyframes bounce {
+    from { transform: translate3d(0, 0, 0);     }
+    to   { transform: translate3d(0, 200px, 0); }
+  }
+  @keyframes bounce {
+    from { transform: translate3d(0, 0, 0);     }
+    to   { transform: translate3d(0, 200px, 0); }
+  }
+  /* Prefix Support */
+  .balltwo{
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-webkit-keyframes bounce {
+    from { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+    to   { -webkit-transform: translate3d(0, 200px, 0); transform: translate3d(0, 200px, 0); }
+  }
